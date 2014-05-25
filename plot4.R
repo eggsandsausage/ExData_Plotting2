@@ -5,6 +5,7 @@ createPlot4 <- function(original.NEI, SCC) {
 	NEI <- merge(SCC[i, list(SCC)], NEI, by="SCC")
 	data("county.fips")
 	county <- map_data("county")
+	
 	#county.fips$polyname <- as.character(county.fips$polyname)
 	#SCC[,SCC:=as.character(SCC)]
 	NEI[,fips:=as.integer(fips)]
